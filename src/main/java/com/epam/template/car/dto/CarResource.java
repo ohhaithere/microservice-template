@@ -59,6 +59,9 @@ public interface CarResource {
     @GetMapping
     Page<CarDto> getCars(String filter, Pageable pageable);
 
+    @GetMapping("/list")
+    Page<CarDto> getAllCars();
+
     /**
      * Updates Car.
      *
